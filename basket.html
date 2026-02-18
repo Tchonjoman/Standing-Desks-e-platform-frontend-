@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Cart</title>
+</head>
+<body>
+	<nav>
+		<label id="logo">Standing <span>Desks</span></label>
+		<label id="menu" onclick="myFunction()"><i class="fa fa-bars"></i></label>
+		<ul id="nav">
+			
+			<li><a href="index.html" accesskey="1">Home</a></li>
+			<li id="desks"><a href="rising.html" accesskey="2">Rising Desks</a> </li>
+			<li id="contact"><a href="#" accesskey="3">Contact Us +</a> <ul class="drop">
+				<li><a href="details.html" accesskey="4">Details</a></li>
+				<li><a href="message.html" accesskey="5">Send Message</a></li>
+			</ul></li>
+			<li><a href="health.html" accesskey="6">Health Benefits</a></li>
+			<li><a href="basket.html" accesskey="7">Basket</a></li>
+		</ul>
+
+	</nav>
+	<script src="desks.js"></script>
+	<div id="content">
+		<table>
+			<tr>
+				<th>Product</th>
+				<th>Quantity</th>
+				<th>Price</th>
+			</tr>
+			<tr>
+				<td> <div class="info"><img src="images/2.jpg" alt="gaming desk"><div>Gaming Desk  <small>$800.00</small><br><a href="">Remove</a> </div></div> </td>
+				<td> <input type="number" name="quanity" max="1000" min="1" value="1"></td>
+				<td>$800.00</td>
+			</tr>
+			<tr>
+				<td> <div class="info"><img src="images/3.jpg" alt="Office/Home Desk "><div>Office/Home Desk  <small>$720.00</small><br><a href="">Remove</a> </div></div> </td>
+				<td> <input type="number" name="quanity" max="1000" min="1" value="1"></td>
+				<td>$720.00</td>
+			</tr>
+			<tr>
+				<td> <div class="info"><img src="images/14.jpg" alt="Office Desk"><div>Office Desk  <small>$975.00</small><br><a href="">Remove</a> </div></div> </td>
+				<td> <input type="number" name="quanity" max="1000" min="1" value="1"></td>
+				<td>$975.00</td>
+			</tr>
+			<tr>
+				<td colspan="3">  <a href="index.html" ><button id="add">Add to Cart</button></a>  </td>
+			</tr>
+			<tr> <td colspan="3"><input type="submit" name="order" value="ORDER" id="button"></td> </tr>
+		</table>
+		<div id="buy">
+			<div id="buy_form">
+				<form>
+					<button onclick="close()"> <img src="icon/cancel.svg" alt="close" id="close"></button>
+					<h3>Your Info</h3>
+					<input type="text" name="firstname" placeholder="Firstname" required="required">
+					<br>
+					<input type="text" name="lastname" placeholder="Lastname" required="required">
+					<br>
+					<input type="text" name="phone" placeholder="Phone" required="required">
+					<br>
+					<input type="text" name="location" placeholder="Location" required="required">
+					<br>
+					<input type="submit" name="info" value="Send">
+				</form>
+			</div>
+			
+		</div>
+		<script >
+			document.getElementById('button').addEventListener("click", function () {
+				document.getElementById("buy").style.display ="block";	
+			
+					})
+			function close(){
+				//close window
+				window.close();
+			}
+		</script>
+		<div id="footer">
+			<div id="links">
+				<table>
+					<tr>
+						<td> <a href="#"><i class="fa fa-facebook"></i></a> </td>
+						<td> <a href="#"><i class="	fa fa-twitter"></i></a> </td>
+						<td> <a href="#"><i class="fa fa-whatsapp"></i></a> </td>
+						<td> <a href="#"><i class="fa fa-instagram"></i></a> </td>
+						<td> <a href="#"><i class="fa fa-google"></i></a> </td>
+					</tr>
+				</table>
+			</div>
+			<div id="copy">
+				<table>
+					<tr>
+						<td>&copy; Standing Desks LTD. All rights reserved.</td>
+					</tr>
+				</table>
+				
+			</div>
+		</div>
+		
+	</div>
+
+
+</body>
+</html>
